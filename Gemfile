@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.2.0"
+ruby "2.3.1"
 
 gem "rails", "4.2.2"
 gem "pg"
@@ -50,6 +50,9 @@ group :test do
   gem "rspec-query-limit", "~> 0.1.2"
   gem "timecop", "~> 0.7.3"
   gem "rspec-sidekiq", "~> 2.2.0"
+  gem "cucumber-rails", "~> 1.4.5", require: false
+  gem "selenium-webdriver", "~> 3.1.0"
+  gem "chromedriver-helper", "~> 1.0.0"
 end
 
 group :development, :test do
